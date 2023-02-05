@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*? 1.Navigation Section*/
+nav {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .fa-solid {
+  font-size: 17px;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.nav-left a img {
+  width: 90px;
+}
+.nav-middle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.nav-middle .search-box {
+  display: flex;
+}
+.nav-middle .search-box input {
+  border-radius: 10px 0px 0px 10px;
+  padding: 5px;
+  border: 0.3px solid black;
+}
+.nav-middle .search-box button {
+  border-radius: 0px 10px 10px 0px;
+  padding: 5px 10px;
+  border: 0.3px solid black;
+  cursor: pointer;
+}
+.nav-middle button {
+  border: none;
+  padding: 5px;
+}
+.nav-middle button:hover {
+  background-color: rgb(211, 204, 204);
+  cursor: pointer;
+}
+.nav-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.nav-right a img {
+  width: 20px;
+}
+/*? 2.Left and Right Section*/
+.container {
+}
+/*? 2.1 left*/
+.left {
+  border-right: 1px solid black;
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+}
+.left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 15px;
+}
+.left-content a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-decoration: none;
+}
+.left-content a .fa-solid,
+.left-content .fa-regular {
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+}
+.left-content a {
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+  gap: 15px;
+}
+.left-content a:hover {
+  background-color: rgb(232, 232, 232);
+}

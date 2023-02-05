@@ -1,14 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+.fa-solid {
+  color: rgb(62, 62, 62);
+}
 /*? 1.Navigation Section*/
 nav {
   width: 100%;
-  padding: 10px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 nav .fa-solid {
   font-size: 17px;
@@ -16,11 +25,23 @@ nav .fa-solid {
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
 }
-.nav-left a img {
-  width: 90px;
+.nav-left a {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
+.nav-left a .fa-youtube {
+  color: rgb(249, 11, 11);
+  font-size: 1.4rem;
+}
+
 .nav-middle {
   display: flex;
   gap: 10px;
@@ -32,12 +53,12 @@ nav .fa-solid {
 .nav-middle .search-box input {
   border-radius: 10px 0px 0px 10px;
   padding: 5px;
-  border: 0.3px solid black;
+  border: 0.3px solid rgb(191, 182, 182);
 }
 .nav-middle .search-box button {
   border-radius: 0px 10px 10px 0px;
   padding: 5px 10px;
-  border: 0.3px solid black;
+  border: 0.3px solid rgb(230, 227, 227);
   cursor: pointer;
 }
 .nav-middle button {
@@ -50,7 +71,7 @@ nav .fa-solid {
 }
 .nav-right {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
 }
 .nav-right a img {
@@ -58,21 +79,27 @@ nav .fa-solid {
 }
 /*? 2.Left and Right Section*/
 .container {
+  display: flex;
 }
 /*? 2.1 left*/
 .left {
   border-right: 1px solid black;
-  width: 170px;
+  width: 180px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 100vh;
+
+  margin-top: 10px;
 }
-.left-content {
+.left-content,
+.left-content-subscription,
+.left-content-more-from-youtube {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding-left: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(210, 207, 207);
 }
 .left-content a {
   display: flex;
@@ -93,4 +120,87 @@ nav .fa-solid {
 }
 .left-content a:hover {
   background-color: rgb(232, 232, 232);
+  color: red;
+}
+
+.left-content-subscription {
+  gap: 1px;
+  padding-left: 4px;
+}
+.left-content-subscription h4 {
+  padding: 10px;
+}
+.left-content-subscription a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+}
+.left-content-subscription a:hover {
+  background-color: rgb(237, 233, 233);
+}
+.left-content-subscription a img {
+  border-radius: 50%;
+  width: 30px;
+}
+.left-content-more-from-youtube {
+  gap: 15px;
+}
+.left-content-more-from-youtube a {
+  display: flex;
+  gap: 15px;
+}
+.left-content-more-from-youtube i {
+  color: red;
+  font-size: 20px;
+}
+/*? 2.2 Right Section*/
+.right {
+  padding: 10px;
+}
+.right-top {
+  display: flex;
+  gap: 10px;
+}
+.right-top a {
+  background-color: rgb(234, 234, 234);
+  padding: 3px 8px;
+  border-radius: 6px;
+  color: rgb(84, 84, 84);
+}
+.right-content {
+  margin-top: 20px;
+  align-items: center;
+}
+.right-content-top img {
+  width: 250px;
+  border-radius: 10px;
+  position: relative;
+}
+.right-content-top p {
+  position: absolute;
+  z-index: 2;
+  color: rgb(251, 248, 248);
+  top: 48%;
+  left: 37%;
+  background-color: black;
+  padding: 2px;
+}
+.right-content-middle {
+  display: flex;
+  gap: 10px;
+}
+.right-content-middle img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.right-content-bottom {
+  display: flex;
+  flex-direction: column;
+  left: 40px;
 }
